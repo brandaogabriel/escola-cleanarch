@@ -19,4 +19,8 @@ public class Aluno {
     public void adicionarTelefone(String ddd, String numero) {
         this.telefones.add(new Telefone(ddd, numero));
     }
+
+    public String getCpf() {
+        return cpf.getNumero();
+    }
 }
