@@ -1,5 +1,6 @@
-package escola;
+package br.com.gabriel.escola;
 
+import br.com.gabriel.escola.dominio.aluno.Telefone;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
