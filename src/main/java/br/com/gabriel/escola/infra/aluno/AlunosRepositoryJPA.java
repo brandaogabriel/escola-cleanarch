@@ -2,33 +2,33 @@ package br.com.gabriel.escola.infra.aluno;
 
 import br.com.gabriel.escola.dominio.aluno.Aluno;
 import br.com.gabriel.escola.dominio.aluno.AlunosRepository;
-import br.com.gabriel.escola.dominio.aluno.CPF;
 
-import java.sql.Connection;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import java.util.List;
 
-public class AlunosRepositoryJDBC implements AlunosRepository {
+public class AlunosRepositoryJPA implements AlunosRepository {
 
-    private Connection connection;
+    private EntityManager entityManager;
 
-    public AlunosRepositoryJDBC(Connection connection) {
-        this.connection = connection;
+    public AlunosRepositoryJPA(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 
     @Override
     public void matricular(Aluno aluno) {
-        //TODO Salva um aluno no banco de dados
+        //TODO
     }
 
     @Override
     public Aluno buscaPorCpf(String cpf) {
-        //TODO Retorna um aluno a partir do seu cpf
+        //TODO
         return null;
     }
 
     @Override
     public List<Aluno> listaTodosAlunosMatriculados() {
-        //TODO Retorna todos os alunos matriculados
+        //TODO
         return null;
     }
 }
